@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Your website description here" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+  <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+  
+  <!-- Font awesome 5 -->
+  <link href="../assets/fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+
+  <!-- custom style -->
+  <link href="../assets/css/ui.css" rel="stylesheet" type="text/css"/>
+  <link href="../assets/css/responsive.css" rel="stylesheet" />
+  <!-- recapcha -->
+<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+  <!-- Scripts -->
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script>
+    // Khởi tạo SDK của Facebook
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '3750184088585677',  // Thay bằng App ID của bạn
+        cookie     : true,           // Bật cookie để server có thể truy xuất session
+        xfbml      : true,           // Parse các social plugin trên trang
+        version    : 'v20.0'         // Thay bằng phiên bản API hiện tại
+      });
+      
+      FB.AppEvents.logPageView();    // Ghi lại lượt xem trang
+    };
+
+    // Load SDK của Facebook
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script src="../js/jquery-2.0.0.min.js" type="text/javascript"></script>
+
+  <!-- Bootstrap4 files-->
+  <script src="../js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <!-- custom javascript -->
+  <script src="../js/script.js" type="text/javascript"></script>
+
+
+    <!-- Your code -->
+
+  <!-- Your custom script -->
+ 
+  <title>React App</title>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+</html>
